@@ -53,20 +53,6 @@ Add screenshots here once you have them:
 - Research job progress
 - Source and summary view
 
-## Project structure
-
-```text
-KOAI/
-├── Package.swift
-├── Sources/
-│   ├── KOAIApp/        # App entry point
-│   ├── KOAICore/       # Shared models and domain types
-│   ├── KOAIResearch/   # Query planning, browser automation, summarization
-│   ├── KOAIStorage/    # SQLite persistence
-│   └── KOAIUI/         # SwiftUI app shell and views
-└── README.md
-```
-
 ## Requirements
 
 - macOS 14 or later
@@ -74,15 +60,6 @@ KOAI/
 - A local `llama.cpp` or `ollama` setup if you want LLM-powered summaries
 
 If no model runtime is available, KOAI can fall back to extractive summarization.
-
-## Run locally
-
-```bash
-swift build
-swift run KOAI
-```
-
-You can also open the package in Xcode and run the `KOAIApp` target.
 
 ## Local model support
 
@@ -93,31 +70,6 @@ KOAI can use several backends depending on your setup:
 - extractive fallback when no model is available
 
 The built-in model library view helps you discover GGUF-friendly models that are better suited for local Apple Silicon use.
-
-## Why this architecture
-
-- `SwiftUI` gives the app a native macOS shell
-- `WKWebView` keeps browser-driven research embedded and privacy-friendly
-- `SQLite` keeps all jobs and outputs local and durable
-- the local backend abstraction lets KOAI work even when no cloud model is available
-
-## Status
-
-KOAI is a working macOS prototype focused on end-to-end research flow:
-
-- topic management
-- browser-based source discovery
-- extraction and ranking
-- article summarization
-- final synthesis
-- persisted traces and results
-
-## Notes
-
-- KOAI is currently a macOS app.
-- Research runs are persisted in SQLite.
-- The browser-based workflow is intentionally conservative.
-- The UI is available in English and Hungarian.
 
 ---
 
@@ -167,20 +119,6 @@ Ide érdemes később képernyőképeket tenni:
 - research job állapot
 - forrás- és összefoglaló nézet
 
-## Projektstruktúra
-
-```text
-KOAI/
-├── Package.swift
-├── Sources/
-│   ├── KOAIApp/        # Alkalmazás belépési pont
-│   ├── KOAICore/       # Közös modellek és domain típusok
-│   ├── KOAIResearch/   # Keresési terv, böngészés, összegzés
-│   ├── KOAIStorage/    # SQLite perzisztencia
-│   └── KOAIUI/         # SwiftUI shell és nézetek
-└── README.md
-```
-
 ## Követelmények
 
 - macOS 14 vagy újabb
@@ -190,13 +128,6 @@ KOAI/
 Ha nincs model runtime, a KOAI extractive fallback módban is tud működni.
 
 ## Lokális futtatás
-
-```bash
-swift build
-swift run KOAI
-```
-
-Xcode-ban is megnyithatod a csomagot, és futtathatod a `KOAIApp` targetet.
 
 ## Helyi modellek támogatása
 
@@ -214,21 +145,3 @@ A beépített modellnézet segít GGUF-barát modellek keresésében, különös
 - a `WKWebView` beágyazott, privacy-barát böngészéshez jó
 - az `SQLite` mindent helyben és tartósan tárol
 - a helyi backend absztrakció miatt az app cloud modell nélkül is használható
-
-## Állapot
-
-A KOAI jelenleg egy működő macOS prototípus, amely az end-to-end research folyamatra koncentrál:
-
-- témakezelés
-- böngészéses forrásfelderítés
-- kinyerés és rangsorolás
-- cikkösszegzés
-- végső szintézis
-- mentett trace-ek és eredmények
-
-## Megjegyzések
-
-- A KOAI jelenleg macOS alkalmazás.
-- A kutatási futások SQLite-ban tárolódnak.
-- A böngészéses workflow szándékosan óvatos.
-- A felület angolul és magyarul is elérhető.
