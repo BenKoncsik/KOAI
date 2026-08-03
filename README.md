@@ -2,7 +2,7 @@
 
 **KOAI** is a desktop research assistant for Windows and macOS. Give it a topic, and it searches the web in the background, reads the pages it finds, and writes you a clear, sourced summary — using an AI model that can run entirely on your own computer, with no cloud account required.
 
-![KOAI main dashboard, showing the topic list on the left and the topic picker in the middle](img/dashboard.png)
+![KOAI main dashboard, showing the topic list on the left and the topic picker in the middle](img/dashboard.png?v=2)
 *The main window: your topics and research history on the left, ready to pick up where you left off.*
 
 ## What KOAI does
@@ -13,13 +13,13 @@
 4. **You review everything** — every search, every page it opened, and every source it used is kept, so you can check where a claim came from.
 5. **Optionally, it reads the report to you** — KOAI can turn a report into spoken narration, or even a two-voice "podcast" conversation between a host and an expert.
 
-![Creating a new research topic, with fields for title, description, tags and research depth](img/create-topic.png)
+![Creating a new research topic, with fields for title, description, tags and research depth](img/create-topic.png?v=2)
 *Starting a new topic: give it a name, a short description, and tell KOAI how deep to dig.*
 
-![Configuring the research settings for a topic: language, freshness, number of sources, depth level](img/topic-setup.png)
+![Configuring the research settings for a topic: language, freshness, number of sources, depth level](img/topic-setup.png?v=2)
 *Every topic is configurable — how many sources to check, how recent they should be, and how much detail to go into.*
 
-![A finished research report, with the synthesized summary, narration options and the list of processed sources](img/final-summary.png)
+![A finished research report, with the synthesized summary, narration options and the list of processed sources](img/final-summary.png?v=2)
 *The result: one readable report, with the full list of sources it was built from, and one-click narration.*
 
 ## Why run the AI model locally?
@@ -38,7 +38,7 @@ Most AI research tools send everything you type to a company's servers. KOAI can
 
 If you ever want more power than your machine can give, KOAI can also fall back to a cloud model through OpenRouter (using your own API key), or work with no AI model at all using a simpler extractive summary.
 
-![Local model settings: backend selection (llama.cpp), model file, server port and Metal GPU acceleration](img/settings-models.png)
+![Local model settings: backend selection (llama.cpp), model file, server port and Metal GPU acceleration](img/settings-models.png?v=2)
 *Under the hood: KOAI runs the model with `llama.cpp`, with automatic Apple Silicon GPU (Metal) acceleration on Mac.*
 
 ## What machine do you need?
@@ -66,7 +66,7 @@ KOAI supports several ways to run AI, chosen in **Settings → Models**:
 - **OpenRouter** — an optional cloud fallback using your own API key (stored securely in your OS's credential store, never in plain settings)
 - **Extractive** — no AI model at all; KOAI still finds and organizes sources for you
 
-![Narration settings: choosing a voice for spoken summaries or a two-voice host/expert podcast, powered by local XTTS](img/narration.png)
+![Narration settings: choosing a voice for spoken summaries or a two-voice host/expert podcast, powered by local XTTS](img/narration.png?v=2)
 *A bonus feature: turn any report into a spoken narration — or a two-voice podcast — entirely with a local text-to-speech engine.*
 
 ## Good to know
@@ -81,7 +81,7 @@ KOAI supports several ways to run AI, chosen in **Settings → Models**:
 
 A **KOAI** egy asztali kutatóasszisztens Windowsra és macOS-re. Megadsz egy témát, ő pedig a háttérben végigkeresi a webet, elolvassa a talált oldalakat, és készít belőle egy világos, forrásokkal alátámasztott összefoglalót — olyan AI-modellel, amely akár teljes egészében a saját gépeden is futhat, felhős fiók nélkül.
 
-![A KOAI főképernyője: bal oldalt a témalista, középen a témaválasztó](img/dashboard.png)
+![A KOAI főképernyője: bal oldalt a témalista, középen a témaválasztó](img/dashboard.png?v=2)
 *A főablak: a témáid és a kutatási előzményeid bal oldalt, bármikor folytathatod, ahol abbahagytad.*
 
 ## Mit csinál a KOAI
@@ -92,13 +92,13 @@ A **KOAI** egy asztali kutatóasszisztens Windowsra és macOS-re. Megadsz egy t�
 4. **Te ellenőrzöl mindent** — minden keresés, minden megnyitott oldal és minden felhasznált forrás megmarad, így bármikor visszanézheted, honnan származik egy állítás.
 5. **Opcionálisan fel is olvassa a riportot** — a KOAI a riportot élőszóban felolvasott narrációvá, vagy akár két hangos "podcast" beszélgetéssé is tudja alakítani egy műsorvezető és egy szakértő között.
 
-![Új kutatási téma létrehozása: cím, leírás, címkék és kutatási mélység mezőkkel](img/create-topic.png)
+![Új kutatási téma létrehozása: cím, leírás, címkék és kutatási mélység mezőkkel](img/create-topic.png?v=2)
 *Új téma indítása: adj neki nevet, egy rövid leírást, és mondd meg, milyen mélyen ássa bele magát.*
 
-![Egy téma kutatási beállításai: nyelv, frissesség, források száma, mélységi szint](img/topic-setup.png)
+![Egy téma kutatási beállításai: nyelv, frissesség, források száma, mélységi szint](img/topic-setup.png?v=2)
 *Minden téma testre szabható — hány forrást nézzen át, mennyire legyenek frissek, és milyen mélységig menjen bele.*
 
-![Egy kész kutatási riport a szintetizált összefoglalóval, narrációs opciókkal és a feldolgozott források listájával](img/final-summary.png)
+![Egy kész kutatási riport a szintetizált összefoglalóval, narrációs opciókkal és a feldolgozott források listájával](img/final-summary.png?v=2)
 *Az eredmény: egy jól olvasható riport, a hozzá tartozó teljes forráslistával, és egy kattintásos narrációval.*
 
 ## Miért érdemes helyben futtatni az AI-modellt?
@@ -117,7 +117,7 @@ A legtöbb AI-alapú kutatóeszköz mindent egy cég szerverére küld, amit beg
 
 Ha valaha többre lenne szükséged, mint amit a géped nyújtani tud, a KOAI át tud váltani egy felhős modellre is az OpenRouteren keresztül (a saját API-kulcsoddal), vagy AI-modell nélkül, egyszerűbb, kivonatoló összefoglalóval is tud dolgozni.
 
-![Helyi modell beállításai: backend kiválasztása (llama.cpp), modellfájl, szerverport és Metal GPU-gyorsítás](img/settings-models.png)
+![Helyi modell beállításai: backend kiválasztása (llama.cpp), modellfájl, szerverport és Metal GPU-gyorsítás](img/settings-models.png?v=2)
 *A motorháztető alatt: a KOAI a `llama.cpp`-vel futtatja a modellt, Mac gépeken automatikus Apple Silicon GPU-gyorsítással (Metal).*
 
 ## Milyen gép kell hozzá?
@@ -145,7 +145,7 @@ A KOAI többféle AI-futtatást támogat, a **Beállítások → Modellek** men�
 - **OpenRouter** — opcionális felhős tartalék a saját API-kulcsoddal (biztonságosan, az operációs rendszer saját hitelesítő-tárolójában, sosem sima beállításként tárolva)
 - **Extractive (kivonatoló)** — AI-modell nélkül; a KOAI így is megkeresi és rendszerezi a forrásokat neked
 
-![Narrációs beállítások: hang kiválasztása a felolvasott összefoglalóhoz, vagy két hangos műsorvezető/szakértő podcast, helyi XTTS motorral](img/narration.png)
+![Narrációs beállítások: hang kiválasztása a felolvasott összefoglalóhoz, vagy két hangos műsorvezető/szakértő podcast, helyi XTTS motorral](img/narration.png?v=2)
 *Bónusz funkció: bármelyik riportot élőszóban felolvasott narrációvá — vagy két hangos podcasttá — alakíthatod, teljesen helyi szövegfelolvasó motorral.*
 
 ## Amit érdemes tudni
